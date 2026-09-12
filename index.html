@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inayat Haryanvi Sweets & Spice | Southall, London</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4A373',
+                            saffron: '#E76F51',
+                            amber: '#F4A261',
+                            deepred: '#8A1C14',
+                            emerald: '#2A9D8F',
+                            dark: '#1C1917',
+                            cream: '#FAEDCD',
+                            bg: '#FDFBF7'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        rozha: ['Rozha One', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-nav {
+            background: rgba(253, 251, 247, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #8A1C14 0%, #E76F51 50%, #D4A373 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pattern-bg {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(#d4a37330 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1deg); }
+        }
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-bg text-stone-800 antialiased selection:bg-brand-saffron selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <aside aria-label="Announcement" class="bg-brand-deepred text-amber-100 text-xs sm:text-sm py-2 px-4 border-b border-amber-900/40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center bg-emerald-500 text-white rounded-full p-0.5">
+                    <i data-lucide="check" class="w-3 h-3"></i>
+                </span>
+                <span class="font-semibold tracking-wide">100% Pure Vegetarian</span>
+                <span class="hidden md:inline text-amber-300/60">•</span>
+                <span class="hidden md:inline">Authentic Desi Ghee Sweets & Traditional Haryanvi Thalis</span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto text-xs sm:text-sm">
+                <span class="flex items-center gap-1.5 text-emerald-300 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Open Today · Closes 12:00 AM
+                </span>
+                <a href="tel:+442031611432" class="hover:text-white transition flex items-center gap-1 font-semibold">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                    +44 20 3161 1432
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-stone-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & Identity -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-deepred to-brand-saffron p-0.5 shadow-md group-hover:scale-105 transition transform">
+                        <div class="w-full h-full bg-brand-bg rounded-full flex items-center justify-center border border-amber-200">
+                            <span class="font-rozha text-2xl text-brand-deepred font-bold">इ</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-serif font-bold text-xl sm:text-2xl tracking-tight text-stone-900 block leading-tight">INAYAT</span>
+                        <span class="text-[10px] tracking-[0.25em] uppercase text-brand-saffron font-bold block">Haryanvi Sweets & Spice</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-7 font-medium text-sm text-stone-700">
+                    <a href="#overview" class="hover:text-brand-saffron transition">Overview</a>
+                    <a href="#menu" class="hover:text-brand-saffron transition">Full Menu</a>
+                    <a href="#thali" class="hover:text-brand-saffron transition">Royal Thali</a>
+                    <a href="#sweets" class="hover:text-brand-saffron transition">Desi Sweets</a>
+                    <a href="#reviews" class="hover:text-brand-saffron transition">Reviews</a>
+                    <a href="#photos" class="hover:text-brand-saffron transition">Photos</a>
+                    <a href="#location" class="hover:text-brand-saffron transition">Contact & Hours</a>
+                </nav>
+
+                <!-- Action CTA & Quick Badges -->
+                <div class="flex items-center gap-3">
+                    <div class="hidden sm:flex items-center bg-amber-50 border border-amber-200 rounded-full px-3 py-1 text-xs text-amber-900 font-semibold shadow-sm">
+                        <span class="text-amber-500 mr-1">★</span> 4.2 <span class="text-stone-400 font-normal ml-1">(72+ Reviews)</span>
+                    </div>
+
+                    <!-- Cart Trigger Button -->
+                    <button onclick="toggleCart()" class="relative p-2.5 bg-stone-100 hover:bg-stone-200 rounded-full text-stone-800 transition">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        <span id="cart-count-badge" class="absolute -top-1 -right-1 bg-brand-deepred text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </button>
+
+                    <a href="#menu" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-brand-deepred hover:bg-red-900 text-white font-semibold text-sm shadow-md hover:shadow-lg transition transform active:scale-95 gap-2">
+                        <span>Order Now</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-stone-700 hover:text-stone-900 focus:outline-none">
+                        <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-bg border-b border-stone-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#overview" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Overview</a>
+            <a href="#menu" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Menu (£1 - £10)</a>
+            <a href="#thali" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Haryanvi Thali</a>
+            <a href="#sweets" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Pure Ghee Sweets</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Google Reviews (4.2 ★)</a>
+            <a href="#location" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-medium border-b border-stone-100">Location & Directions</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:+442031611432" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-brand-deepred text-brand-deepred font-bold text-sm">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Call Southall Branch
+                </a>
+                <a href="#menu" onclick="toggleMobileMenu()" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-brand-deepred text-white font-bold text-sm shadow">
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i> View Menu & Order
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="relative pattern-bg pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-amber-100/90 border border-amber-300/80 rounded-full py-1 px-4 text-xs sm:text-sm font-semibold text-brand-deepred shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-brand-saffron"></span>
+                        Authentic Haryanvi Flavours in Southall, London
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-stone-900 leading-[1.15]">
+                        Desi Swad, Pure Ghee Sweets & <span class="text-gradient">Rustic Thalis</span>
+                    </h1>
+
+                    <p class="text-stone-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Craving authentic North Indian & traditional Haryanvi delicacies? From hot Bajra Roti with white butter & sarson saag, crispy Rabri Jalebis, to budget-friendly thalis crafted fresh every day.
+                    </p>
+
+                    <!-- Google Metadata Quick Summary Bar -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm pt-1">
+                        <div class="flex items-center gap-1.5 bg-white border border-stone-200 px-3.5 py-2 rounded-xl shadow-sm">
+                            <div class="flex text-amber-500">
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            </div>
+                            <span class="font-bold text-stone-900">4.2</span>
+                            <span class="text-stone-500 text-xs">(72 Google Reviews)</span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 bg-white border border-stone-200 px-3.5 py-2 rounded-xl shadow-sm text-stone-700">
+                            <i data-lucide="banknote" class="w-4 h-4 text-brand-emerald"></i>
+                            <span class="font-semibold text-stone-900">£1 – £10</span>
+                            <span class="text-xs text-stone-500">per person</span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3.5 py-2 rounded-xl shadow-sm text-emerald-800">
+                            <i data-lucide="leaf" class="w-4 h-4 text-emerald-600"></i>
+                            <span class="font-semibold text-xs sm:text-sm">100% Pure Veg</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to action buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#menu" class="w-full sm:w-auto px-8 py-3.5 bg-brand-deepred hover:bg-red-900 text-white rounded-full font-bold shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                            <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
+                            <span>Explore Our Menu</span>
+                        </a>
+                        <a href="#thali" class="w-full sm:w-auto px-7 py-3.5 bg-amber-100 hover:bg-amber-200 text-brand-deepred border border-amber-300 rounded-full font-bold transition text-center flex items-center justify-center gap-2">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-brand-saffron"></i>
+                            <span>Haryanvi Thali Special (£8.99)</span>
+                        </a>
+                    </div>
+
+                    <!-- Location info brief -->
+                    <div class="pt-3 text-xs text-stone-500 flex items-center justify-center lg:justify-start gap-2">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-saffron"></i>
+                        <span>96 The Green, Southall UB2 4BG · Open until 12:00 AM Midnight</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image & Interactive Card Collage -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Featured Card: Royal Thali -->
+                        <div class="relative bg-white p-4 rounded-3xl shadow-2xl border border-amber-100 z-10">
+                            <div class="relative h-64 sm:h-72 w-full overflow-hidden rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" 
+                                     alt="Inayat Royal Special Haryanvi Thali" 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition duration-700">
+                                <div class="absolute top-3 left-3 bg-brand-deepred text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    Chef's Choice
+                                </div>
+                                <div class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-xl border border-white/20">
+                                    Under £10 Value
+                                </div>
+                            </div>
+
+                            <div class="pt-4 flex justify-between items-start">
+                                <div>
+                                    <h2 class="font-serif font-bold text-lg text-stone-900">Maha Haryanvi Royal Thali</h2>
+                                    <p class="text-xs text-stone-500 mt-0.5">Bajra Roti, Desi Ghee Shakkar, Kadhi, Paneer, Lassi</p>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xl font-extrabold text-brand-deepred">£8.99</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between">
+                                <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Fresh Batch Ready
+                                </span>
+                                <button onclick="quickAdd('Maha Haryanvi Royal Thali', 8.99)" class="text-xs bg-brand-saffron hover:bg-orange-600 text-white font-bold px-4 py-2 rounded-full transition flex items-center gap-1 shadow-sm">
+                                    <i data-lucide="plus" class="w-3.5 h-3.5"></i> Add to Order
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1: Fresh Mithai -->
+                        <div class="absolute -top-6 -left-6 bg-white p-3 rounded-2xl shadow-xl border border-amber-100 hidden sm:flex items-center gap-3 z-20 animate-float">
+                            <div class="w-11 h-11 rounded-xl bg-amber-100 flex items-center justify-center text-amber-700">
+                                <i data-lucide="cookie" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-900">Desi Ghee Jalebi</p>
+                                <p class="text-[11px] text-brand-saffron font-semibold">Hot & Crispy · £4.50</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2: Authentic & Budget -->
+                        <div class="absolute -bottom-6 -right-6 bg-white p-3 rounded-2xl shadow-xl border border-amber-100 hidden sm:flex items-center gap-3 z-20">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold">
+                                4.2★
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-stone-900">Southall's Favourite</p>
+                                <p class="text-[11px] text-stone-500">£1 - £10 Friendly Budget</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights & Key Features Strip -->
+    <section class="bg-amber-50/60 border-b border-amber-200/60 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-deepred flex items-center justify-center mb-2">
+                        <i data-lucide="leaf" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-sm">100% Pure Veg</h3>
+                    <p class="text-xs text-stone-500">Pure vegetarian preparation</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-deepred flex items-center justify-center mb-2">
+                        <i data-lucide="flame" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-sm">Pure Shuddh Ghee</h3>
+                    <p class="text-xs text-stone-500">Traditional Mithai recipes</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-deepred flex items-center justify-center mb-2">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-sm">Late Night Dining</h3>
+                    <p class="text-xs text-stone-500">Open everyday till 12:00 AM</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-deepred flex items-center justify-center mb-2">
+                        <i data-lucide="pound-sterling" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-bold text-stone-900 text-sm">£1 - £10 Range</h3>
+                    <p class="text-xs text-stone-500">Affordable authentic treats</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thali Feature Spotlight -->
+    <section id="thali" class="py-16 md:py-24 bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-saffron">Pride of Haryana</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900 mt-1 mb-4">Our Signature Royal Thalis</h2>
+                <p class="text-stone-600 text-sm sm:text-base">Experience the wholesome rustic taste of village Haryana in Southall. Wholesome portions served hot with home-churned butter and desi ghee.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Thali 1 -->
+                <div class="bg-brand-bg rounded-3xl p-6 border border-amber-200/80 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-5">
+                            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80" alt="Special Haryanvi Thali" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-amber-500 text-white font-bold text-xs px-2.5 py-1 rounded-full">Top Seller</span>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-stone-900">Desi Haryanvi Special Thali</h3>
+                            <span class="text-lg font-extrabold text-brand-deepred">£8.99</span>
+                        </div>
+                        <p class="text-stone-600 text-xs mb-4">Includes 2 Bajra Rotis with Desi White Butter, Haryanvi Kadhi Pakora, Sarson Da Saag/Seasonal Sabzi, Meetha Churma & Fresh Chaas.</p>
+                        
+                        <div class="space-y-1.5 text-xs text-stone-500 pb-4 border-b border-stone-200">
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pure Desi Ghee Churma</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Handcrafted Bajra or Tandoori Roti</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Fresh Mint Raita & Salad</div>
+                        </div>
+                    </div>
+                    <button onclick="quickAdd('Desi Haryanvi Special Thali', 8.99)" class="mt-5 w-full py-2.5 rounded-xl bg-brand-deepred hover:bg-red-900 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+                        <i data-lucide="plus" class="w-4 h-4"></i> Add Thali (£8.99)
+                    </button>
+                </div>
+
+                <!-- Thali 2 -->
+                <div class="bg-brand-bg rounded-3xl p-6 border-2 border-brand-saffron shadow-md hover:shadow-xl transition flex flex-col justify-between relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-saffron text-white text-[11px] font-extrabold uppercase px-4 py-0.5 rounded-full shadow">
+                        Most Popular in Southall
+                    </div>
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-5">
+                            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=700&q=80" alt="Royal Shahi Paneer Thali" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-brand-deepred text-white font-bold text-xs px-2.5 py-1 rounded-full">Royal Choice</span>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-stone-900">Royal Shahi Thali</h3>
+                            <span class="text-lg font-extrabold text-brand-deepred">£9.50</span>
+                        </div>
+                        <p class="text-stone-600 text-xs mb-4">Shahi Paneer, Dal Makhani, 2 Butter Naan or Lachha Paratha, Jeera Rice, Gulab Jamun, Raita & Special Chutney.</p>
+                        
+                        <div class="space-y-1.5 text-xs text-stone-500 pb-4 border-b border-stone-200">
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Creamy Shahi Paneer & Dal Makhani</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Hot Butter Naan & Fragrant Rice</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Includes Hot Gulab Jamun Dessert</div>
+                        </div>
+                    </div>
+                    <button onclick="quickAdd('Royal Shahi Thali', 9.50)" class="mt-5 w-full py-2.5 rounded-xl bg-brand-saffron hover:bg-orange-600 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+                        <i data-lucide="plus" class="w-4 h-4"></i> Add Thali (£9.50)
+                    </button>
+                </div>
+
+                <!-- Thali 3 -->
+                <div class="bg-brand-bg rounded-3xl p-6 border border-amber-200/80 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 rounded-2xl overflow-hidden mb-5">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80" alt="Quick Desi Punjabi-Haryanvi Thali" class="w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-stone-800 text-white font-bold text-xs px-2.5 py-1 rounded-full">Budget Everyday</span>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-stone-900">Student & Quick Thali</h3>
+                            <span class="text-lg font-extrabold text-brand-deepred">£6.99</span>
+                        </div>
+                        <p class="text-stone-600 text-xs mb-4">Punjabi Chole, Dal Tadka, 3 Hot Phulkas / Rotis, Steamed Basmati Rice, Onion Salad & Pickle.</p>
+                        
+                        <div class="space-y-1.5 text-xs text-stone-500 pb-4 border-b border-stone-200">
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Pocket-Friendly Everyday Meal</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Freshly Rolled Hot Tawa Rotis</div>
+                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Homestyle light cooking</div>
+                        </div>
+                    </div>
+                    <button onclick="quickAdd('Student & Quick Thali', 6.99)" class="mt-5 w-full py-2.5 rounded-xl bg-stone-900 hover:bg-black text-white font-bold text-sm transition flex items-center justify-center gap-2">
+                        <i data-lucide="plus" class="w-4 h-4"></i> Add Thali (£6.99)
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Full Menu Section with Categories -->
+    <section id="menu" class="py-16 md:py-24 pattern-bg border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-saffron">Menu (£1 – £10 Range)</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900 mt-1">Explore Sweets, Chaat & Mains</h2>
+                    <p class="text-stone-600 text-sm mt-1">Authentic delicacies freshly prepared throughout the day</p>
+                </div>
+
+                <!-- Menu Filter Tabs -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 hide-scrollbar">
+                    <button onclick="filterMenu('all')" class="menu-tab active-tab px-4 py-2 rounded-full text-xs font-bold transition bg-brand-deepred text-white whitespace-nowrap shadow-sm">All Items</button>
+                    <button onclick="filterMenu('sweets')" class="menu-tab px-4 py-2 rounded-full text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 whitespace-nowrap">Mithai / Sweets</button>
+                    <button onclick="filterMenu('chaat')" class="menu-tab px-4 py-2 rounded-full text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 whitespace-nowrap">Chaat & Snacks</button>
+                    <button onclick="filterMenu('mains')" class="menu-tab px-4 py-2 rounded-full text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 whitespace-nowrap">Mains & Breads</button>
+                    <button onclick="filterMenu('drinks')" class="menu-tab px-4 py-2 rounded-full text-xs font-bold transition bg-white text-stone-700 hover:bg-stone-100 border border-stone-200 whitespace-nowrap">Lassi & Chai</button>
+                </div>
+            </div>
+
+            <!-- Menu Grid Container -->
+            <div id="menu-items-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Dynamically Populated By JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mithai / Sweets Highlight Section -->
+    <section id="sweets" class="py-16 bg-gradient-to-br from-amber-50 via-stone-50 to-orange-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-saffron bg-amber-100 px-3 py-1 rounded-full border border-amber-300">Shuddh Desi Ghee Mithai</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900 leading-tight">
+                        Fresh Haryanvi Ghevar, Hot Jalebi & Laddoos
+                    </h2>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        At Inayat, our confectioners bring decades of heritage confectionery recipes. From rich saffron-soaked Ghevar with malai Rabri to pure Besan Pinni and Gond Ladoos made with premium ingredients.
+                    </p>
+                    
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                            <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-brand-deepred font-bold text-xs">01</div>
+                            <div>
+                                <h3 class="text-xs font-bold text-stone-900">Custom Sweet Gift Boxes Available</h3>
+                                <p class="text-[11px] text-stone-500">Perfect for weddings, Diwali, Karwa Chauth, or family visits</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-amber-200 shadow-sm">
+                            <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-brand-deepred font-bold text-xs">02</div>
+                            <div>
+                                <h3 class="text-xs font-bold text-stone-900">Live Hot Jalebi Counter</h3>
+                                <p class="text-[11px] text-stone-500">Fried in pure desi ghee right before your eyes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="quickAdd('Desi Ghee Mithai Assorted Box (500g)', 8.50)" class="px-6 py-3 rounded-full bg-brand-deepred hover:bg-red-900 text-white text-xs sm:text-sm font-bold shadow-md transition flex items-center gap-2">
+                            <i data-lucide="gift" class="w-4 h-4"></i> Order 500g Assorted Mithai Box (£8.50)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sweet Showcase Images -->
+                <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-md border border-amber-100 group">
+                            <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" alt="Hot Jalebi and Sweets" class="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="p-3 bg-white">
+                                <h4 class="font-serif font-bold text-stone-900 text-sm">Desi Ghee Jalebi</h4>
+                                <p class="text-xs text-brand-saffron font-semibold">Crispy, Syrupy & Warm</p>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-md border border-amber-100 group">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80" alt="Fresh Samosas and Snacks" class="w-full h-36 sm:h-44 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="p-3 bg-white">
+                                <h4 class="font-serif font-bold text-stone-900 text-sm">Khasta Samosa & Kachori</h4>
+                                <p class="text-xs text-stone-500">Served with tangy saunth</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-6">
+                        <div class="rounded-2xl overflow-hidden shadow-md border border-amber-100 group">
+                            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80" alt="Gulab Jamun Sweet" class="w-full h-36 sm:h-44 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="p-3 bg-white">
+                                <h4 class="font-serif font-bold text-stone-900 text-sm">Shahi Gulab Jamun</h4>
+                                <p class="text-xs text-stone-500">Melt-in-the-mouth soft</p>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-md border border-amber-100 group">
+                            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Traditional Ghevar & Sweets" class="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="p-3 bg-white">
+                                <h4 class="font-serif font-bold text-stone-900 text-sm">Haryanvi Ghevar Special</h4>
+                                <p class="text-xs text-brand-deepred font-bold">Festive Speciality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section (Based on 4.2 Rating / 72 Reviews) -->
+    <section id="reviews" class="py-16 md:py-24 bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-saffron">Verified Google Reviews</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900 mt-1">What Southall Is Saying</h2>
+                </div>
+
+                <!-- Google Summary Card -->
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex items-center gap-4">
+                    <div class="text-center">
+                        <div class="text-3xl font-extrabold text-stone-900">4.2</div>
+                        <div class="flex text-amber-500 text-xs mt-0.5">
+                            ★★★★<span class="text-stone-300">★</span>
+                        </div>
+                    </div>
+                    <div class="border-l border-amber-300 pl-4 text-xs text-stone-600">
+                        <p class="font-bold text-stone-900">72+ Google Reviews</p>
+                        <p>£1–10 affordable pricing</p>
+                        <p class="text-emerald-700 font-medium">Reported by 24+ diners</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-brand-bg p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+                            "Finding authentic Haryanvi food in London is rare, but Inayat nails the taste! The Bajra Roti with fresh butter and Kadhi brought back childhood memories. Excellent value for under £10."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-stone-200/80">
+                        <div class="w-8 h-8 rounded-full bg-brand-deepred text-white flex items-center justify-center font-bold text-xs">
+                            R
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-bold text-stone-900">Rajesh Sharma</h3>
+                            <p class="text-[10px] text-stone-500">Local Guide · 4 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-bg p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+                            "The hot Jalebi and Samosa Chaat at 96 The Green are the best evening snack in Southall. Best thing is they stay open until midnight, so perfect for late cravings!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-stone-200/80">
+                        <div class="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-xs">
+                            P
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-bold text-stone-900">Pooja Patel</h3>
+                            <p class="text-[10px] text-stone-500">Southall Resident · 2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-bg p-6 rounded-2xl border border-stone-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-3 text-sm">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 text-stone-300"></i>
+                        </div>
+                        <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed mb-4">
+                            "Extremely budget-friendly. A full stomach thali for only £8.99 in London is unheard of. 100% vegetarian, clean packaging for takeaway, and friendly staff."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-3 border-t border-stone-200/80">
+                        <div class="w-8 h-8 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-xs">
+                            G
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-bold text-stone-900">Gurpreet Singh</h3>
+                            <p class="text-[10px] text-stone-500">Verified Diner · 11 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery / Atmosphere -->
+    <section id="photos" class="py-16 pattern-bg border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-saffron">Visual Flavours</span>
+                <h2 class="text-3xl font-serif font-bold text-stone-900 mt-1">Moments & Dishes from Inayat</h2>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="h-44 sm:h-52 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80" alt="Thali Dish" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-44 sm:h-52 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=500&q=80" alt="Jalebi Counter" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-44 sm:h-52 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80" alt="Chaat Dishes" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="h-44 sm:h-52 rounded-2xl overflow-hidden shadow-sm group">
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80" alt="Indian Curries" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Opening Hours Section -->
+    <section id="location" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-saffron">Find Us in Southall</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-stone-900 mt-1">Visit Inayat Sweets & Spice</h2>
+                        <p class="text-stone-600 text-sm mt-2">Located in the vibrant heart of Southall on The Green. Walk in for hot thalis, takeaway, or fresh sweets boxes.</p>
+                    </div>
+
+                    <!-- Details Card -->
+                    <div class="bg-brand-bg rounded-2xl p-6 border border-stone-200 space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-red-100 text-brand-deepred flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm">Restaurant Address</h3>
+                                <p class="text-xs text-stone-600 mt-0.5">96 The Green, Southall UB2 4BG, United Kingdom</p>
+                                <a href="https://maps.google.com/?q=96+The+Green,+Southall+UB2+4BG" target="_blank" class="text-xs font-bold text-brand-deepred hover:underline inline-flex items-center gap-1 mt-2">
+                                    Get Directions on Google Maps <i data-lucide="external-link" class="w-3 h-3"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 pt-3 border-t border-stone-200">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm">Opening Hours</h3>
+                                <div class="text-xs text-stone-600 space-y-1 mt-1">
+                                    <div class="flex justify-between w-48">
+                                        <span class="font-semibold text-stone-800">Monday – Sunday:</span>
+                                        <span class="text-emerald-700 font-bold">10:00 AM – 12:00 AM</span>
+                                    </div>
+                                    <p class="text-[11px] text-stone-400">Late night dining & fresh sweets counter</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 pt-3 border-t border-stone-200">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-saffron flex items-center justify-center shrink-0">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900 text-sm">Telephone & Inquiries</h3>
+                                <p class="text-xs text-stone-600 mt-0.5">+44 20 3161 1432</p>
+                                <a href="tel:+442031611432" class="text-xs font-bold text-brand-deepred hover:underline inline-block mt-1">
+                                    Click to call for takeaway orders
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="flex flex-wrap gap-3">
+                        <a href="tel:+442031611432" class="px-5 py-2.5 rounded-xl bg-brand-deepred text-white text-xs font-bold shadow hover:bg-red-900 transition flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i> Call Restaurant
+                        </a>
+                        <a href="https://maps.google.com/?q=96+The+Green,+Southall+UB2+4BG" target="_blank" class="px-5 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-bold transition flex items-center gap-2">
+                            <i data-lucide="navigation" class="w-4 h-4"></i> Open Navigation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map / Info Display Card -->
+                <div class="lg:col-span-6 flex flex-col justify-center">
+                    <div class="bg-stone-900 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl border border-stone-800">
+                        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-saffron/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="relative z-10 space-y-6">
+                            <div class="inline-flex items-center gap-2 bg-stone-800/80 border border-stone-700 px-3 py-1 rounded-full text-xs text-amber-300">
+                                <i data-lucide="store" class="w-3.5 h-3.5"></i> Southall High Street Area
+                            </div>
+
+                            <h3 class="font-serif text-2xl font-bold">Visiting from Ealing, Hayes or Heathrow?</h3>
+                            
+                            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
+                                We are easily accessible from Southall Elizabeth Line Station (approx. 7 minutes walk). Stop by for warm Chai, Kachoris, or bring home a box of fresh Kaju Katli and Jalebis!
+                            </p>
+
+                            <div class="bg-stone-800/60 p-4 rounded-xl border border-stone-700 space-y-2">
+                                <div class="text-xs font-bold text-amber-400">Takeaway & Counter Service</div>
+                                <p class="text-xs text-stone-400">Pre-order by phone for swift collection of bulk sweets or family Thali packs.</p>
+                            </div>
+
+                            <div class="pt-2 flex items-center justify-between text-xs text-stone-400">
+                                <span>Vegetarian Certified</span>
+                                <span>Free WiFi in Store</span>
+                                <span>Open till 12 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide-over Cart Modal -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-stone-900/60 backdrop-blur-sm transition-opacity" onclick="toggleCart()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                
+                <!-- Drawer Header -->
+                <div class="p-6 border-b border-stone-200 flex items-center justify-between bg-brand-bg">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-deepred"></i>
+                        <h2 class="font-serif font-bold text-lg text-stone-900" id="slide-over-title">Your Order</h2>
+                        <span id="cart-item-count" class="text-xs bg-amber-100 text-brand-deepred font-bold px-2 py-0.5 rounded-full">0 Items</span>
+                    </div>
+                    <button onclick="toggleCart()" class="text-stone-400 hover:text-stone-600 p-1 rounded-lg">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Drawer Body (Items List) -->
+                <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+                    <!-- Populated via JavaScript -->
+                    <div id="empty-cart-view" class="text-center py-12 space-y-3">
+                        <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto text-stone-400">
+                            <i data-lucide="shopping-basket" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-800 text-sm">Your order is empty</h3>
+                        <p class="text-xs text-stone-500">Explore our delicious thalis and fresh sweets to add items.</p>
+                    </div>
+                </div>
+
+                <!-- Drawer Footer (Subtotal & Checkout) -->
+                <div class="p-6 border-t border-stone-200 bg-brand-bg space-y-4">
+                    <div class="space-y-1.5 text-xs text-stone-600">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span id="cart-subtotal" class="font-semibold text-stone-900">£0.00</span>
+                        </div>
+                        <div class="flex justify-between text-stone-500">
+                            <span>Takeaway / Service</span>
+                            <span>Included</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-bold text-stone-900 pt-2 border-t border-stone-200">
+                            <span>Total (Inc. VAT)</span>
+                            <span id="cart-total" class="text-brand-deepred text-base">£0.00</span>
+                        </div>
+                    </div>
+
+                    <button onclick="handleCheckoutModal()" class="w-full py-3 bg-brand-deepred hover:bg-red-900 text-white font-bold rounded-xl text-sm transition shadow-md flex items-center justify-center gap-2">
+                        <span>Proceed to Pickup / Order</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                    
+                    <p class="text-[11px] text-center text-stone-400">
+                        Instant confirmation · Pay at counter or online upon pickup
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout / Confirmation Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden p-4">
+        <div class="absolute inset-0 bg-stone-900/70 backdrop-blur-sm" onclick="closeCheckoutModal()"></div>
+        <div class="relative bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-stone-200 z-10 space-y-4 text-center">
+            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+                <i data-lucide="check-circle" class="w-8 h-8"></i>
+            </div>
+            
+            <h3 class="font-serif font-bold text-xl text-stone-900">Order Placed for Southall Branch!</h3>
+            <p class="text-xs text-stone-600">
+                Thank you! Your delicious vegetarian order will be prepared fresh at <strong>96 The Green, Southall UB2 4BG</strong>.
+            </p>
+
+            <div class="bg-amber-50 rounded-xl p-3 text-xs text-stone-700 text-left border border-amber-200 space-y-1">
+                <p><strong>Order Ref:</strong> #INY-<span id="order-ref-num">8492</span></p>
+                <p><strong>Estimated Prep Time:</strong> 15–20 minutes</p>
+                <p><strong>Helpline:</strong> +44 20 3161 1432</p>
+            </div>
+
+            <button onclick="completeOrderFlow()" class="w-full py-2.5 rounded-xl bg-brand-deepred hover:bg-red-900 text-white font-bold text-xs transition">
+                Done & Return to Menu
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-stone-900 text-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300">
+        <div class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-white shrink-0">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i>
+        </div>
+        <span id="toast-message" class="text-xs font-semibold">Item added to your order</span>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="bg-stone-900 text-stone-300 pt-16 pb-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-stone-800">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-saffron flex items-center justify-center text-white font-rozha text-xl font-bold">
+                            इ
+                        </div>
+                        <div>
+                            <span class="font-serif font-bold text-lg text-white block">INAYAT</span>
+                            <span class="text-[10px] tracking-[0.2em] uppercase text-amber-400 font-bold block">Haryanvi Sweets & Spice</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-stone-400 max-w-sm leading-relaxed">
+                        Authentic pure vegetarian restaurant in Southall, London. Specialising in Haryanvi Thalis, Shuddh Desi Ghee Mithai, and street chaat at everyday friendly prices.
+                    </p>
+                    <div class="flex items-center gap-2 text-xs text-amber-300 font-semibold">
+                        <span>★ 4.2 Rating (72+ Google Reviews)</span>
+                        <span>•</span>
+                        <span>£1–10 Price Point</span>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Quick Links</h3>
+                    <ul class="space-y-2 text-xs text-stone-400">
+                        <li><a href="#overview" class="hover:text-amber-400 transition">Overview</a></li>
+                        <li><a href="#thali" class="hover:text-amber-400 transition">Haryanvi Royal Thali</a></li>
+                        <li><a href="#sweets" class="hover:text-amber-400 transition">Pure Ghee Sweets</a></li>
+                        <li><a href="#menu" class="hover:text-amber-400 transition">Full Menu (£1 - £10)</a></li>
+                        <li><a href="#reviews" class="hover:text-amber-400 transition">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Working Hours -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Branch Hours</h3>
+                    <div class="space-y-1.5 text-xs text-stone-400">
+                        <p class="text-white font-medium">Monday – Sunday</p>
+                        <p class="text-emerald-400 font-semibold">10:00 AM – 12:00 AM Midnight</p>
+                        <p class="text-[11px] text-stone-500 pt-1">Open 7 Days a week</p>
+                        <p class="text-[11px] text-stone-500">Updated 11 weeks ago</p>
+                    </div>
+                </div>
+
+                <!-- Contact Southall -->
+                <div>
+                    <h3 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Southall Branch</h3>
+                    <div class="space-y-2 text-xs text-stone-400">
+                        <p class="flex items-start gap-1.5">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-saffron shrink-0 mt-0.5"></i>
+                            <span>96 The Green, Southall UB2 4BG, UK</span>
+                        </p>
+                        <p class="flex items-center gap-1.5">
+                            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-saffron shrink-0"></i>
+                            <a href="tel:+442031611432" class="hover:text-white transition">+44 20 3161 1432</a>
+                        </p>
+                        <p class="text-[11px] text-emerald-400 font-medium">100% Vegetarian Dining</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Legal Strip -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>© <span id="year"></span> Inayat Haryanvi Sweets & Spice. All Rights Reserved.</p>
+                <div class="flex gap-4">
+                    <span class="hover:text-stone-300">Privacy Policy</span>
+                    <span>•</span>
+                    <span class="hover:text-stone-300">Food Allergies Notice</span>
+                    <span>•</span>
+                    <span class="hover:text-stone-300">Southall, London</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menu Data Model (£1 - £10 budget compliant as per listing)
+        const menuData = [
+            {
+                id: 1,
+                name: "Maha Haryanvi Royal Thali",
+                category: "mains",
+                price: 8.99,
+                badge: "Speciality",
+                desc: "Bajra roti, white butter, Kadhi pakora, Sarson saag, churma & fresh chaas.",
+                image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 2,
+                name: "Royal Shahi Paneer Thali",
+                category: "mains",
+                price: 9.50,
+                badge: "Bestseller",
+                desc: "Rich Shahi Paneer, Dal Makhani, 2 Butter Naan, Jeera Rice, Gulab Jamun.",
+                image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 3,
+                name: "Chole Bhature (2 Pcs)",
+                category: "mains",
+                price: 6.99,
+                badge: "Hot Favourite",
+                desc: "Fluffy puffed bhaturas served with spicy Amritsari chole, pickled onion & chillies.",
+                image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 4,
+                name: "Hot Desi Ghee Jalebi with Rabri",
+                category: "sweets",
+                price: 4.50,
+                badge: "Fresh & Crispy",
+                desc: "Golden crispy jalebis soaked in saffron syrup topped with thick creamy rabri.",
+                image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 5,
+                name: "Traditional Haryanvi Ghevar",
+                category: "sweets",
+                price: 5.50,
+                badge: "Authentic",
+                desc: "Honeycomb sweet cake infused with cardamom, saffron, and silver vark.",
+                image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 6,
+                name: "Assorted Mithai Box (500g)",
+                category: "sweets",
+                price: 8.50,
+                badge: "Gift Box",
+                desc: "Kaju Katli, Besan Ladoo, Milk Cake, Gulab Jamun in elegant presentation box.",
+                image: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 7,
+                name: "Crispy Samosa Chaat (2 Pcs)",
+                category: "chaat",
+                price: 4.50,
+                badge: "Street Snack",
+                desc: "Crushed potato samosas with chickpeas, chilled sweetened yoghurt & chutneys.",
+                image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 8,
+                name: "Dahi Bhalla Papdi Chaat",
+                category: "chaat",
+                price: 4.25,
+                badge: "Refreshing",
+                desc: "Soft lentil dumplings and crunchy papdi with spicy mint and sweet tamarind sauce.",
+                image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 9,
+                name: "Khasta Kachori with Aloo Sabzi",
+                category: "chaat",
+                price: 3.99,
+                badge: "Crispy",
+                desc: "2 flaky moong dal kachoris served with traditional spiced potato curry.",
+                image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 10,
+                name: "Special Desi Sweet Lassi",
+                category: "drinks",
+                price: 2.99,
+                badge: "Thick & Chilled",
+                desc: "Hand-churned creamy yoghurt lassi topped with fresh malai and crushed pistachios.",
+                image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 11,
+                name: "Desi Masala Karak Chai",
+                category: "drinks",
+                price: 1.99,
+                badge: "Aromatic",
+                desc: "Freshly brewed Indian tea with crushed ginger, green cardamom and whole spices.",
+                image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80"
+            },
+            {
+                id: 12,
+                name: "Gulab Jamun (2 Pcs Warm)",
+                category: "sweets",
+                price: 2.75,
+                badge: "Melt In Mouth",
+                desc: "Classic milk solids balls fried golden and steeped in rose-scented sugar syrup.",
+                image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80"
+            }
+        ];
+
+        // Shopping Cart State
+        let cart = [];
+
+        // Render Menu Items
+        function renderMenu(category = 'all') {
+            const grid = document.getElementById('menu-items-grid');
+            grid.innerHTML = '';
+
+            const filteredItems = category === 'all' 
+                ? menuData 
+                : menuData.filter(item => item.category === category);
+
+            filteredItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl p-4 border border-stone-200 shadow-sm hover:shadow-md transition flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-40 rounded-xl overflow-hidden mb-3">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                            <span class="absolute top-2.5 left-2.5 bg-stone-900/80 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+                                ${item.badge}
+                            </span>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-serif font-bold text-stone-900 text-sm leading-snug">${item.name}</h3>
+                            <span class="font-extrabold text-brand-deepred text-sm ml-2">£${item.price.toFixed(2)}</span>
+                        </div>
+                        <p class="text-stone-500 text-xs mt-1.5 line-clamp-2">${item.desc}</p>
+                    </div>
+                    <button onclick="quickAdd('${item.name.replace(/'/g, "\\'")}', ${item.price})" class="mt-4 w-full py-2 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-200 text-brand-deepred font-bold text-xs transition flex items-center justify-center gap-1.5">
+                        <i data-lucide="plus" class="w-3.5 h-3.5"></i> Add to Order
+                    </button>
+                `;
+                grid.appendChild(card);
+            });
+
+            // Re-initialize Lucide icons for freshly inserted elements
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        }
+
+        // Filter Menu Tabs
+        function filterMenu(category) {
+            document.querySelectorAll('.menu-tab').forEach(tab => {
+                tab.classList.remove('bg-brand-deepred', 'text-white');
+                tab.classList.add('bg-white', 'text-stone-700', 'border', 'border-stone-200');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-stone-700', 'border', 'border-stone-200');
+            event.currentTarget.classList.add('bg-brand-deepred', 'text-white');
+            renderMenu(category);
+        }
+
+        // Add Item to Cart
+        function quickAdd(name, price) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            updateCartUI();
+            showToast(`Added "${name}" to your order`);
+        }
+
+        // Change Quantity in Cart
+        function updateQuantity(name, delta) {
+            const item = cart.find(i => i.name === name);
+            if (item) {
+                item.quantity += delta;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(i => i.name !== name);
+                }
+            }
+            updateCartUI();
+        }
+
+        // Update Cart Interface
+        function updateCartUI() {
+            const container = document.getElementById('cart-items-container');
+            const totalCountBadge = document.getElementById('cart-count-badge');
+            const cartItemCount = document.getElementById('cart-item-count');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            const totalEl = document.getElementById('cart-total');
+
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+            totalCountBadge.textContent = totalItems;
+            cartItemCount.textContent = `${totalItems} Items`;
+            subtotalEl.textContent = `£${subtotal.toFixed(2)}`;
+            totalEl.textContent = `£${subtotal.toFixed(2)}`;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div id="empty-cart-view" class="text-center py-12 space-y-3">
+                        <div class="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto text-stone-400">
+                            <i data-lucide="shopping-basket" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-800 text-sm">Your order is empty</h3>
+                        <p class="text-xs text-stone-500">Explore our delicious thalis and fresh sweets to add items.</p>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = '';
+                cart.forEach(item => {
+                    const row = document.createElement('div');
+                    row.className = "flex items-center justify-between p-3 bg-stone-50 rounded-xl border border-stone-200";
+                    row.innerHTML = `
+                        <div class="flex-1 pr-2">
+                            <h4 class="font-semibold text-stone-900 text-xs">${item.name}</h4>
+                            <p class="text-[11px] text-brand-saffron font-bold">£${(item.price * item.quantity).toFixed(2)}</p>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-2 py-1 rounded-lg border border-stone-300">
+                            <button onclick="updateQuantity('${item.name.replace(/'/g, "\\'")}', -1)" class="text-stone-500 hover:text-stone-900 font-bold px-1 text-xs">-</button>
+                            <span class="text-xs font-bold w-4 text-center">${item.quantity}</span>
+                            <button onclick="updateQuantity('${item.name.replace(/'/g, "\\'")}', 1)" class="text-stone-500 hover:text-stone-900 font-bold px-1 text-xs">+</button>
+                        </div>
+                    `;
+                    container.appendChild(row);
+                });
+            }
+
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        }
+
+        // Toggle Cart Drawer
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        // Toggle Mobile Navigation
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Toast Notification System
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = message;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 2500);
+        }
+
+        // Checkout Flow Modals
+        function handleCheckoutModal() {
+            if (cart.length === 0) {
+                showToast("Your cart is empty. Please add items!");
+                return;
+            }
+            toggleCart();
+            document.getElementById('order-ref-num').textContent = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function completeOrderFlow() {
+            cart = [];
+            updateCartUI();
+            closeCheckoutModal();
+            showToast("Order confirmed! See you at 96 The Green Southall.");
+        }
+
+        // Initial Load Setup
+        document.addEventListener('DOMContentLoaded', () => {
+            renderMenu('all');
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
